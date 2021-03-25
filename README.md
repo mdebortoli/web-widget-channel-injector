@@ -2,6 +2,9 @@
 
 This script was developed to allow Zendesk admins to add new custom items under the Zendesk Web Widget once Answer Bot presents the list of available channels.
 
+**IMPORTANT:** This script was developed as a proof of concept since it uses DOM manipulation as its core mechanism of action. Keep in mind that if Answer Bot changes its DOM elements structure, the new channels may no longer be
+displayed, although it should not break the native product behaviour.
+
 ## HOW DOES THIS WORK?
 
 This script combines observers and an "event bus" that makes it possible to create a communication between the parent page and the Web Widget iframe. This way, you can benefit from DOM manipulation to add extra channel options as soon as Answer Bot presents the list of Zendesk standard channels.
